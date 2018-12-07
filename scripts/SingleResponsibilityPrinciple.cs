@@ -10,11 +10,10 @@ using static System.Console;
 namespace DesignPrinciples
 {
 
-    public class InterfaceSegregationPrinciple
+    public class SingleResponsibilityPrinciple
     {
-	    public InterfaceSegregationPrinciple()
-	    {
-	    }
+        public SingleResponsibilityPrinciple()
+        {
+        }
     }
-
 }

@@ -9,12 +9,12 @@ using static System.Console;
 
 namespace DesignPrinciples
 {
-
-    public class InterfaceSegregationPrinciple
+    public class OpenClosedPrinciple
     {
-	    public InterfaceSegregationPrinciple()
+	    public OpenClosedPrinciple()
 	    {
 	    }
     }
-
 }
+
+

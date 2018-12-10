@@ -1,5 +1,5 @@
 ﻿using System;
-using Systemm.Collections.Generic;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -20,7 +20,7 @@ namespace DesignPrinciples
 
         }
 
-        publice Rectangle(int width, int height)
+        public Rectangle(int width, int height)
         {
             Width = width;
             Height = height;
@@ -67,10 +67,10 @@ namespace DesignPrinciples
 
         static public int Area(Rectangle r) => r.Width * r.Height;
 
-        public static void Main(string[] args)
-        {
-            Rectangle rc = new Rectangle();
-            WriteLine($"{rc} has area { Area(rc)}");
-        }
+        //public static void Main(string[] args)
+        //{
+        //    Rectangle rc = new Rectangle();
+        //    WriteLine($"{rc} has area { Area(rc)}");
+        //}
     }
 }

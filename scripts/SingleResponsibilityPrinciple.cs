@@ -33,7 +33,7 @@ namespace DesignPrinciples
 
         public override string ToString()
         {
-            return string.Joing(Environment.NewLine, entries);
+            return string.Join(Environment.NewLine, entries);
         }
 
         public void Save(string filename)

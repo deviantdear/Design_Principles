@@ -148,7 +148,7 @@ namespace DesignPrinciples
 
     public class OpenClosedPrinciple
     {
-	    static void Main(String [] args)
+        static void Main(String[] args)
         {
             var apple = new Product("Apple", Color.Green, Size.Small);
             var tree = new Product("Tree", Color.Green, Size.Large);
@@ -156,7 +156,7 @@ namespace DesignPrinciples
 
             Product[] products = { apple, tree, house };
 
-//Implementing the wrong way to implement filtering
+            //Implementing the wrong way to implement filtering
 
             var pf = new ProductFilter();
             WriteLine("Green products (old):");
@@ -165,20 +165,20 @@ namespace DesignPrinciples
                 WriteLine($"- {p.Name} is green");
             }
 
-//Implementing the correct way to filter with the Open Closed Principle
+            //Implementing the correct way to filter with the Open Closed Principle
 
             var bf = new BetterFilter();
             WriteLine("Green products (new):");
-            foreach(var p in bf.Filter(products, new ColorSpecification(Color.Green)))
+            foreach (var p in bf.Filter(products, new ColorSpecification(Color.Green)))
             {
                 WriteLine($"- {p.Name} is green");
             }
 
-//They both produce identical results
-//Below you can see how you can create an iSpecification to filter out multiple requirements
+            //They both produce identical results
+            //Below you can see how you can create an iSpecification to filter out multiple requirements
 
             WriteLine("Large Blue items");
-            foreach(var p in bf.Filter(
+            foreach (var p in bf.Filter(
                 products,
                 new AndSpecification<Product>(
                     new ColorSpecification(Color.Blue),

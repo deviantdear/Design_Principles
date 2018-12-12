@@ -25,7 +25,7 @@ namespace DesignPrinciples
             return count; //memento pattern
         }
 
-        //not a stable way to remove entries because it removes the other indices
+//not a stable way to remove entries because it removes the other indices
         public void RemoveEntry(int index)
         {
             entries.RemoveAt(index);
@@ -36,25 +36,53 @@ namespace DesignPrinciples
             return string.Join(Environment.NewLine, entries);
         }
 
+//Adding too much functionality to a single class can cause problems later
+//So adding all these persistance functionalities to the Journal class is not recommended per the Single Responsibilty Principle
         public void Save(string filename)
         {
             File.WriteAllText(filename, ToString());
         }
 
-        //public static 
+        
+        public static Journal Load(string filename)
+        {
+            return null;
+        }
+
+        public void Load(Uri uri)
+        {
+
+        }
+    
     }
+
+//So do not add these to the single class, make an additional class dedicated to Persistance like below
+//This is called a separation of concerns
+    public class Persistance
+    {
+        public void SaveToFile(Journal j, string filename, bool overwrite = false)
+        {
+            if (overwrite || !File.Exists(filename))
+                File.WriteAllText(filename, j.ToString());
+        }
+
+    }
+
     public class SingleResponsibilityPrinciple
     {
-        static void Main(string[] args)
-        {
-            var j = new Journal();
-            j.AddEntry("It was sunny, and beautiful");
-            j.AddEntry("Woe is me");
+        //uncomment to run
+        //static void Main(string[] args)
+        //{
+        //    var j = new Journal();
+        //    j.AddEntry("It was sunny, and beautiful");
+        //    j.AddEntry("Woe is me");
+        //    WriteLine(j);
 
-            WriteLine(j);
-        }
-        public SingleResponsibilityPrinciple()
-        {
-        }
+        //    var p = new Persistance();
+        //    var filename = @"C\journal.txt";
+        //    p.SaveToFile(j, filename, true);
+        //    Process.Start(filename);
+
+        //}
     }
 }

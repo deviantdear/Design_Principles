@@ -1,6 +1,6 @@
 # Design_Principles
 C# Design principles illustrated in code
-Made in visual studio with C# 7 
+made in Visual Studio with C# 7 
 
 SOLID Design Principles 
 

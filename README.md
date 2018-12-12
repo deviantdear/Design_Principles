@@ -17,4 +17,4 @@ Interface Segregation
   -used printer interface functionalties as an example
   
 Dependency Inversion 
- -created a geneology search that uses value tuples to determine a persons familial relationsip
+ -created a geneology search that uses value tuples to determine a persons familial relationship

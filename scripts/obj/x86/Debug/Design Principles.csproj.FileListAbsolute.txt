@@ -1,0 +1,6 @@
+F:\DeviantDear\Desktop\College\UDEMY\Design Principles\Design_Principles\scripts\bin\Debug\ConsoleApplication.exe
+F:\DeviantDear\Desktop\College\UDEMY\Design Principles\Design_Principles\scripts\bin\Debug\ConsoleApplication.pdb
+F:\DeviantDear\Desktop\College\UDEMY\Design Principles\Design_Principles\scripts\obj\x86\Debug\ConsoleApplication.exe
+F:\DeviantDear\Desktop\College\UDEMY\Design Principles\Design_Principles\scripts\obj\x86\Debug\ConsoleApplication.pdb
+F:\DeviantDear\Desktop\College\UDEMY\Design Principles\Design_Principles\scripts\obj\x86\Debug\Design Principles.csprojAssemblyReference.cache
+F:\DeviantDear\Desktop\College\UDEMY\Design Principles\Design_Principles\scripts\obj\x86\Debug\Design Principles.csproj.CoreCompileInputs.cache

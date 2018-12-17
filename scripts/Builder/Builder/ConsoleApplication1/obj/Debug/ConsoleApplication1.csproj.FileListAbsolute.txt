@@ -1,0 +1,6 @@
+F:\DeviantDear\Desktop\College\UDEMY\Design Principles\Design_Principles\scripts\Builder\Builder\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+F:\DeviantDear\Desktop\College\UDEMY\Design Principles\Design_Principles\scripts\Builder\Builder\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+F:\DeviantDear\Desktop\College\UDEMY\Design Principles\Design_Principles\scripts\Builder\Builder\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+F:\DeviantDear\Desktop\College\UDEMY\Design Principles\Design_Principles\scripts\Builder\Builder\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+F:\DeviantDear\Desktop\College\UDEMY\Design Principles\Design_Principles\scripts\Builder\Builder\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+F:\DeviantDear\Desktop\College\UDEMY\Design Principles\Design_Principles\scripts\Builder\Builder\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

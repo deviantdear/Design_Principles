@@ -96,38 +96,38 @@ namespace DesignPrinciples
     public class Demo
     {
 
-        static void Main(String[] args)
-        {
-            // if you want to build a simple HTML paragraph using StringBuilder
-            var hello = "hello";
-            var sb = new StringBuilder();
-            sb.Append("<p>");
-            sb.Append(hello);
-            sb.Append("</p>");
-            WriteLine(sb);
+        //static void Main(String[] args)
+        //{
+        //    // if you want to build a simple HTML paragraph using StringBuilder
+        //    var hello = "hello";
+        //    var sb = new StringBuilder();
+        //    sb.Append("<p>");
+        //    sb.Append(hello);
+        //    sb.Append("</p>");
+        //    WriteLine(sb);
 
-            // now I want an HTML list with 2 words in it
-            var words = new[] { "hello", "world" };
-            sb.Clear();
-            sb.Append("<ul>");
-            foreach (var word in words)
-            {
-                sb.AppendFormat("<li>{0}</li>", word);
-            }
-            sb.Append("</ul>");
-            WriteLine(sb);
+        //    // now I want an HTML list with 2 words in it
+        //    var words = new[] { "hello", "world" };
+        //    sb.Clear();
+        //    sb.Append("<ul>");
+        //    foreach (var word in words)
+        //    {
+        //        sb.AppendFormat("<li>{0}</li>", word);
+        //    }
+        //    sb.Append("</ul>");
+        //    WriteLine(sb);
 
-            // ordinary non-fluent builder
-            var builder = new HtmlBuilder("ul");
-            builder.AddFluentChild("li", "hello");
-            builder.AddFluentChild("li", "world");
-            WriteLine(builder.ToString());
+        //    // ordinary non-fluent builder
+        //    var builder = new HtmlBuilder("ul");
+        //    builder.AddFluentChild("li", "hello");
+        //    builder.AddFluentChild("li", "world");
+        //    WriteLine(builder.ToString());
 
-            // fluent builder
-            builder.Clear();  // disengage builder from the object it's building, then...
-            //fluent interface that chains several calls by returning a reference to the builder
-            builder.AddFluentChild("li", "hello").AddFluentChild("li", "world");
-            WriteLine(builder);
-        }
+        //    // fluent builder
+        //    builder.Clear();  // disengage builder from the object it's building, then...
+        //    //fluent interface that chains several calls by returning a reference to the builder
+        //    builder.AddFluentChild("li", "hello").AddFluentChild("li", "world");
+        //    WriteLine(builder);
+        //}
     }
 }

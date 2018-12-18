@@ -43,8 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
-    <Compile Include="Demo.cs" />
+    <Compile Include="FacetedBuilder.cs" />
+    <Compile Include="FluentBuilders.cs" />
+    <Compile Include="HTMLBuilderDemo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

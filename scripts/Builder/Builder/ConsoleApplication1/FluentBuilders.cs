@@ -64,7 +64,7 @@ namespace DesignPrinciples
         }
     }
 
-    internal class Program
+    internal class FluentBuilders
     {
         public static void Main(string[] args)
         {

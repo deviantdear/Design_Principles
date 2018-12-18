@@ -93,7 +93,7 @@ namespace DesignPrinciples
         }
     }
 
-    public class Demo
+    public class HTMLBuilderDemo
     {
 
         //static void Main(String[] args)
